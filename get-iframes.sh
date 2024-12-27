@@ -7,4 +7,4 @@ if [ -z "$input_url" ]; then
   exit 1
 fi
 
-curl -s "$input_url" | sed -E 's/<iframe[^>]*src="([^"]*)".*/\1/g; s/<[^>]*>//g' | grep http | awk '{print $1}'
+curl -s "$input_url" | sed -E 's/<iframe[^>]*src="([^"]*)".*/\1/g; s/<[^>]*>//g' | grep http | awk '{print $1}' | grep -E "^http"
