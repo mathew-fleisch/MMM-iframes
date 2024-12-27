@@ -1,8 +1,6 @@
 Module.register("MMM-iframes", {
 	// these are the default values that can be overridden in your config/config.js
 	defaults: {
-		// In seconds
-		updateInterval: 1,
 		// 5 minutes in seconds
 		updateInterval: 300, 
 		// Unique id allows multiple modules with isolated css target 

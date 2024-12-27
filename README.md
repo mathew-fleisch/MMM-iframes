@@ -19,8 +19,6 @@ The default links that I have put in this module likely will not work forever. I
   module: 'MMM-iframes',
   position: 'top_right',
   config: {
-    // In seconds
-    updateInterval: 1,
     // 5 minutes in seconds
     updateInterval: 300, 
     // Unique id allows multiple modules with isolated css target 
@@ -75,3 +73,11 @@ The [template](MMM-iframes.njk) uses the id `#iframes` and passes the `config.if
   overflow: hidden;
 }
 ```
+
+## Keybindings
+
+There are three keybindings that can advance the iframe in the list before the updateInterval elapses, or go back one place in the list, or back to the beginning. By default, 
+
+- `1` (keyCode:49) will advance forward one place
+- `2` (keyCode:50) will go backward one place
+- `3` (keyCode:51) will go back to the beginning of the list
