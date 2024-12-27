@@ -12,6 +12,8 @@ cd ~/MagicMirror/modules && git clone https://github.com/mathew-fleisch/MMM-ifra
 
 ## Configuration
 
+The default links that I have put in this module likely will not work forever. If you find an updated link, please submit a PR to update it in the read-me and defaults. Youtube embeds will work (if not the first source) for live or recorded content. Video streams on you local network could also be a source in the list of iframes (used rasperry pi + motioneye that hosts a video stream this module can embed)
+
 ```javascript
 {
   module: 'MMM-iframes',
