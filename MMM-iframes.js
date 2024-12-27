@@ -13,7 +13,7 @@ Module.register("MMM-iframes", {
 		started: 0,
 		// Another timestamp
 		updated: 0,
-		// Press '1' to go back one source in the iframes list
+		// Press '1' to go backwards one source in the iframes list
 		keyCodeBackward: 49,
 		// Press '2' to go forwards one source in the iframes list
 		keyCodeForward: 50,
