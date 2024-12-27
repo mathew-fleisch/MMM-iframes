@@ -13,11 +13,11 @@ Module.register("MMM-iframes", {
 		started: 0,
 		// Another timestamp
 		updated: 0,
-		// Go back
+		// Press '1' to go back one source in the iframes list
 		keyCodeBackward: 49,
-		// Go forwards
+		// Press '2' to go forwards one source in the iframes list
 		keyCodeForward: 50,
-		// To the beginning
+		// Press '3' to go to the beginning of the iframes list
 		keyCodeReset: 51,
 		// Many live webcam feeds can be extracted from websites.
 		// Use the provided modules/MMM-iframes/get-iframes.sh helper
