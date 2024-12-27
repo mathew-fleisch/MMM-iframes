@@ -69,19 +69,19 @@ Module.register("MMM-iframes", {
 				// Ignore all other keypresses
 				if (event.keyCode == self.config.keyCodeForward || event.keyCode == self.config.keyCodeBackward || event.keyCode == self.config.keyCodeReset) {
 
-					// Advance one place in the list, and back around to the beginning if at the end
-					if (event.keyCode == self.config.keyCodeForward) {
-						self.config.currentIframe++;
-						if (self.config.currentIframe >= self.config.iframes.length) {
-							self.config.currentIframe = 0;
-						}
-					}
-
 					// Move backward one place in the list and to the end of the list if at the beginning
 					if (event.keyCode == self.config.keyCodeBackward) {
 						self.config.currentIframe--;
 						if (self.config.currentIframe < 0) {
 							self.config.currentIframe = self.config.iframes.length-1;
+						}
+					}
+
+					// Advance one place in the list, and back around to the beginning if at the end
+					if (event.keyCode == self.config.keyCodeForward) {
+						self.config.currentIframe++;
+						if (self.config.currentIframe >= self.config.iframes.length) {
+							self.config.currentIframe = 0;
 						}
 					}
 
