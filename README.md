@@ -2,7 +2,7 @@
 
 A module for the [MagicMirror](https://github.com/MagicMirrorOrg/MagicMirror) where a list of iframe sources are defined an displayed in a loop. If a keyboard is connected, the sources can also be manually cycled. The iframe sources in the example are all live webcam feeds from various sources.
 
-Included in this repo is a [helper script](get-iframes.sh) to scrape iframe sources from other websites. For instance, four of the live cameras currently in the examples are the [Salesforce Tower Cameras](https://www.cbsnews.com/sanfrancisco/salesforce-tower-cameras/) and those iframes can be scraped with the included [helper script](get-iframes.sh) (Warning: the helper script will generate many false positives). If you are comfortable with html, view the source, and search for `<iframe` and grab the `src` value for the iframes array.
+Included in this repo is a [helper script](get-iframes.sh) to scrape iframe sources from other websites. For instance, four of the live cameras currently in the examples are the [Salesforce Tower Cameras](https://www.cbsnews.com/sanfrancisco/salesforce-tower-cameras/) and those iframes can be scraped with the included [helper script](get-iframes.sh). Or, if you are comfortable with html, view the source, and search for `<iframe` and grab the `src` value for the iframes array.
 
 ```bash
 ./get-iframes.sh https://www.cbsnews.com/sanfrancisco/salesforce-tower-cameras/
