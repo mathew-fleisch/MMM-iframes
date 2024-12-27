@@ -6,7 +6,7 @@ Module.register("MMM-iframes", {
 		// Unique id allows multiple modules with isolated css target 
 		iframeId: "iframes",
 		// Don't use a youtube video as the first source... it doesn't work for some reason
-		iframeSrc: "<iframe class=\"iframes-iframe\" src=\"https://g1.ipcamlive.com/player/player.php?alias=608dc4709bc06&autoplay=1&skin=white\" scrolling=\"0\"></iframe>",
+		iframeSrc: "<iframe src=\"https://g1.ipcamlive.com/player/player.php?alias=608dc4709bc06&autoplay=1&skin=white\" scrolling=\"0\"></iframe>",
 		// Why not start at the beginning
 		currentIframe: 0,
 		// Timestamp
@@ -64,7 +64,7 @@ Module.register("MMM-iframes", {
 		document.addEventListener('keyup', function(event) {
 			console.log('key pressed: '+event.keyCode);
 			
-			iframe_obj=document.querySelector('#'+self.config.iframeId+' .iframes-iframe');
+			iframe_obj=document.querySelector('#'+self.config.iframeId+' iframe');
 			if(iframe_obj) {
 				// Ignore all other keypresses
 				if (event.keyCode == self.config.keyCodeForward || event.keyCode == self.config.keyCodeBackward || event.keyCode == self.config.keyCodeReset) {
@@ -102,7 +102,7 @@ Module.register("MMM-iframes", {
 		});
 		setInterval(function () {
 			now = self.getSimpleDate('X');
-			iframe_obj=document.querySelector('#'+self.config.iframeId+' .iframes-iframe');
+			iframe_obj=document.querySelector('#'+self.config.iframeId+' iframe');
 			if(iframe_obj) {
 				// maths
 				if ((now-self.config.updated) >= self.config.updateInterval) {
