@@ -40,7 +40,7 @@ Module.register("MMM-iframes", {
 			// Hanalei Colony Resort (does not work in server mode)
 			"https://relay.ozolio.com/pub.api?cmd=embed&oid=EMB_PJRP00000C69",
 			// Because I had to...
-			"https://player.vimeo.com/video/637130880?autoplay=1&app_id=58479"
+			"https://player.vimeo.com/video/798328936?autoplay=1&app_id=58479"
 		]
 	},
 
