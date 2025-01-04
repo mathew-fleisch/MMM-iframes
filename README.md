@@ -10,6 +10,9 @@ Included in this repo is a [helper script](get-iframes.sh) to scrape iframe sour
 
 Note: Some webcams will only work when running MagicMirror in an electron browser. Audio will only work in server mode, viewing MagicMirror through a browser like firefox.
 
+![](https://i.imgur.com/mjIry5i.gif)
+![](https://i.imgur.com/GLlh6uD.gif)
+
 ## Setup
 
 Clone the module into your modules folder:
